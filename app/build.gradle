@@ -48,7 +48,7 @@ android {
     }
 
     lintOptions {
-        checkReleaseBuilds false
+        //checkReleaseBuilds false
         abortOnError false
     }
     dexOptions {
