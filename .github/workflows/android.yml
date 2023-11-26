@@ -24,3 +24,9 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
+
+    - name: Create APK folder
+      run: mkdir apk
+
+    - name: Copy APK file
+      run: cp app/build/outputs/apk/debug/app-debug.apk apk/
