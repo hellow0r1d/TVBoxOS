@@ -25,6 +25,8 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
   
-    - name: Display structure of downloaded files
-      run: ls -R
-      working-directory: path/to/artifact
+    - name: upload result
+      uses: actions/upload-artifact@v1
+      with:
+        name: my-artifact
+        path: ${{ github.workspace }/your_dictionary
